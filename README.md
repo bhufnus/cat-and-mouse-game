@@ -6,3 +6,5 @@ Things to add:
 Countdown timer
 Replay option
 Game instructions
+
+Play it live here: https://bhufnus.github.io/cat-and-mouse-game/
