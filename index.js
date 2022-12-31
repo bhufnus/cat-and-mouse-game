@@ -1,4 +1,4 @@
-let gameOver = false;
+let gameOver = true;
 
 const PlayerDimensions = {
   height: document.getElementById("player").clientHeight,
@@ -9,6 +9,12 @@ const GameDimensions = {
   height: document.getElementById("game").clientHeight,
   width: document.getElementById("game").clientWidth,
 };
+
+function closeStart() {
+  const startMenu = document.getElementById("start-menu");
+  startMenu.style.visibility = "hidden";
+  gameOver = false;
+}
 
 function movePlayerLeft() {
   const leftNumbers = player.style.left.replace("px", "");
