@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cat and Mouse!</title>
-  <link rel="icon" type="image/x-icon" href="images/mouse.jpg">
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-  <h1>Cat & Mouse</h1>
-  <div id="game">
-    <div id="ending" style="visibility: hidden">
-      <h1>You Win!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cat and Mouse!</title>
+    <link rel="icon" type="image/x-icon" href="images/mouse.jpg" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <h1>Cat & Mouse</h1>
+    <div id="container">
+      <div id="instructions-panel">
+        <h2><strong>How To Play</strong></h2>
+        <p>
+          You are a cat. Your job is to pounce directly on the mouse to kill it!
+          <br /><br />
+          <strong>Use the arrow keys to move.</strong>
+        </p>
+      </div>
+      <div id="game">
+        <div id="ending" style="visibility: hidden">
+          <h1>You Win!</h1>
+        </div>
+        <div id="player" style="bottom: 200px; left: 180px"></div>
+        <div
+          id="mouse"
+          style="bottom: 100px; left: 180px; backgroundcolor: #808080"
+        ></div>
+      </div>
+      <script type="text/javascript" src="index.js"></script>
     </div>
-    <div id="player" style="bottom: 200px; left: 180px;"></div>
-    <div id="mouse" style="bottom:100px; left: 180px; backgroundColor:#808080"></div>
-  </div>
-  <script type="text/javascript" src="index.js"></script>
-</body>
+  </body>
 </html>
